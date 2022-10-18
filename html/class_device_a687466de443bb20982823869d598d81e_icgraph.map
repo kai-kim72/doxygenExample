@@ -1,0 +1,7 @@
+<map id="resetTouchIcHw" name="resetTouchIcHw">
+<area shape="rect" id="node1" title="use to reset TouchIC HW" alt="" coords="561,5,676,32"/>
+<area shape="rect" id="node2" href="$class_device.html#a6aa1dfe9780c134956ba0345478bfba9" title="use to reset TouchIC" alt="" coords="415,5,513,32"/>
+<area shape="rect" id="node3" href="$class_vehicle_if.html#ac5c54df7ed3b930268c8d7752c101725" title=" " alt="" coords="248,5,367,32"/>
+<area shape="rect" id="node4" href="$class_vehicle_if.html#a05848de25ac2dbec233935058a1d24b4" title=" " alt="" coords="104,5,200,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="This is main function for hvac pannel." alt="" coords="5,5,56,32"/>
+</map>

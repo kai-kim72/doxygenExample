@@ -1,0 +1,9 @@
+<map id="nowUpdatingChanged" name="nowUpdatingChanged">
+<area shape="rect" id="node1" title=" " alt="" coords="583,31,729,57"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#a10ee4d32814bba5e7480b2e5ac420273" title="This function is called when firmware updating is complete in Mian &amp; SNOR." alt="" coords="404,5,535,32"/>
+<area shape="rect" id="node6" href="$class_f_w_update_manager.html#a47c14c1dedad72ce9e7b5674072a4b7c" title="use to update All firmware" alt="" coords="421,56,518,83"/>
+<area shape="rect" id="node3" href="$class_f_w_update_manager.html#a2e7c47859935cf07c758e45671084620" title="use to initialize signal for FWUpdateThread slot status" alt="" coords="221,5,356,32"/>
+<area shape="rect" id="node4" href="$class_f_w_update_manager.html#a98b1050f09da390896f964fb7a892391" title="use to initialize FWUpdate engine" alt="" coords="104,31,173,57"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="This is main function for hvac pannel." alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node7" href="$class_f_w_update_manager.html#ae8f82605aa11f1862ba88ead2b93bce6" title="use to check FWUpdating is ready or not" alt="" coords="239,56,338,83"/>
+</map>

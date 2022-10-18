@@ -1,0 +1,5 @@
+<map id="AirConditioner" name="AirConditioner">
+<area shape="rect" id="node1" title="control air conditioner level and on off" alt="" coords="95,365,235,663"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_unit.html" title="this base class have attribute location coordination mX,mY,mZ and Rotation degree" alt="" coords="5,5,165,317"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_level_adjustable.html" title="Adjusting a destination level as like heat, cool, temperature, etc... , by using this abstract interf..." alt="" coords="189,108,304,215"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="checkUpdate" name="checkUpdate">
+<area shape="rect" id="node1" title="use to check FWUpdating is ready or not" alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#a7a043e3991398e63f32dc1708cea3a03" title="use to find the new update firmware image file in the predefined directory" alt="" coords="152,5,261,32"/>
+<area shape="rect" id="node3" href="$class_f_w_update_manager.html#a47c14c1dedad72ce9e7b5674072a4b7c" title="use to update All firmware" alt="" coords="158,56,255,83"/>
+<area shape="rect" id="node4" href="$class_f_w_update_thread.html#a1da06f228605b7f25034170ca4696ca3" title=" " alt="" coords="309,56,464,83"/>
+</map>

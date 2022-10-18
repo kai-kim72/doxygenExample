@@ -1,0 +1,4 @@
+<map id="WheelWarmOff" name="WheelWarmOff">
+<area shape="rect" id="node1" title="control wheel warm level by using implemented class of LevelAdjustable interface off wheel warm" alt="" coords="5,13,116,39"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1example_1_1hvacapplication_1_1_level_adjustable.html#a99195e6fc45fc950e3a89ff54ff89801" title=" " alt="" coords="164,5,360,47"/>
+</map>

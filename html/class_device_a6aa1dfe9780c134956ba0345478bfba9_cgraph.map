@@ -1,0 +1,5 @@
+<map id="resetTouchIC" name="resetTouchIC">
+<area shape="rect" id="node1" title="use to reset TouchIC" alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$class_device.html#a687466de443bb20982823869d598d81e" title="use to reset TouchIC HW" alt="" coords="153,5,268,32"/>
+<area shape="rect" id="node3" href="$class_device.html#a63dfbc0a22698d4c75f617fd8302831e" title="use to reset TouchIC LDO" alt="" coords="152,56,269,83"/>
+</map>

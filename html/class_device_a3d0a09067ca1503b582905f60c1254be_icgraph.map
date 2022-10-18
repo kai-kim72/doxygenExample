@@ -1,0 +1,5 @@
+<map id="getInstance" name="getInstance">
+<area shape="rect" id="node1" title="use to get instance of created Device class" alt="" coords="181,31,271,57"/>
+<area shape="rect" id="node2" href="$class_property.html#aa521783ec688955645e1d61b61097fdc" title="Construct a new Property:: Property object." alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node3" href="$class_vehicle_if.html#a12af26603fed49ba471c389ca6d58b2c" title="Construct a new Vehicle If:: Vehicle If object." alt="" coords="5,56,133,83"/>
+</map>

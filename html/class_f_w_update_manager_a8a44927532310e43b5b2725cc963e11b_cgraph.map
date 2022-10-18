@@ -1,0 +1,4 @@
+<map id="syncMisc" name="syncMisc">
+<area shape="rect" id="node1" title="use to sync MISC" alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#aa259202f10d1e62df990659c6736669c" title="use to notify Updating is complete" alt="" coords="132,5,287,32"/>
+</map>

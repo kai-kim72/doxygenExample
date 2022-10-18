@@ -1,0 +1,4 @@
+<map id="getInstance" name="getInstance">
+<area shape="rect" id="node1" title="use to get instance of created Device class" alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node2" href="$class_device.html#abb5349bdf5f41f34848742319838968c" title="Construct a new Device:: Device object." alt="" coords="143,5,203,32"/>
+</map>

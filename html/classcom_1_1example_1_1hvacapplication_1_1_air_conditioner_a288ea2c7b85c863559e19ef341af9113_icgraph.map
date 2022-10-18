@@ -1,0 +1,7 @@
+<map id="setmACLevel" name="setmACLevel">
+<area shape="rect" id="node1" title=" " alt="" coords="380,56,479,83"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_air_conditioner.html#abf8f3dee212ce60941261a942f942692" title="control air conditioner down level" alt="" coords="249,5,332,32"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_air_conditioner.html#aba67875daf1e237cb924dadf51f85d5d" title="control air conditioner off a/c" alt="" coords="257,56,324,83"/>
+<area shape="rect" id="node5" href="$classcom_1_1example_1_1hvacapplication_1_1_air_conditioner.html#ac1af359746b5cf494e04882868927797" title="control air conditioner up level" alt="" coords="257,107,324,133"/>
+<area shape="rect" id="node4" href="$classcom_1_1example_1_1hvacapplication_1_1_main_activity.html#a85e87cb5ced88dff7c8173ecc4f636d1" title="create Activity function" alt="" coords="5,49,201,90"/>
+</map>

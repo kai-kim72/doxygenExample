@@ -1,0 +1,10 @@
+<map id="setLcdBrightness" name="setLcdBrightness">
+<area shape="rect" id="node1" title="use to set LCD Brigthness level" alt="" coords="1028,71,1151,98"/>
+<area shape="rect" id="node2" href="$class_property.html#ac792abda76c81851b81127b681bdd177" title=" " alt="" coords="783,5,975,47"/>
+<area shape="rect" id="node3" href="$class_property.html#a20b1c61b11e4958034432a25c57465ab" title=" " alt="" coords="563,71,718,98"/>
+<area shape="rect" id="node6" href="$class_property.html#a3f21b8378bc05e437a2e7f13f4479e50" title=" " alt="" coords="779,122,980,149"/>
+<area shape="rect" id="node4" href="$class_property.html#a4227da8785aa5fc03a23645321bbfe74" title=" " alt="" coords="104,115,275,156"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="This is main function for hvac pannel." alt="" coords="5,122,56,149"/>
+<area shape="rect" id="node7" href="$class_property.html#ac108e63f995b842eff411e5397cfc98d" title=" " alt="" coords="551,177,731,203"/>
+<area shape="rect" id="node8" href="$class_property.html#a304b961db20fc78f850ebc920606b1b8" title=" " alt="" coords="323,173,503,215"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="IVolumeable" name="IVolumeable">
+<area shape="rect" id="node1" title="control audio volume level and mute" alt="" coords="55,5,174,112"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_steer_wheel.html" title="control steer Wheel location and warm, and volume level" alt="" coords="5,160,224,516"/>
+</map>

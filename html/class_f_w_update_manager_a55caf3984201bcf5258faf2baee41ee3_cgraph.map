@@ -1,0 +1,4 @@
+<map id="showUpdateMenu" name="showUpdateMenu">
+<area shape="rect" id="node1" title="use to show FWUpdate Menu" alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#a7a043e3991398e63f32dc1708cea3a03" title="use to find the new update firmware image file in the predefined directory" alt="" coords="179,5,288,32"/>
+</map>

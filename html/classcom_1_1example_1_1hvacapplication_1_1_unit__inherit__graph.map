@@ -1,0 +1,9 @@
+<map id="Unit" name="Unit">
+<area shape="rect" id="node1" title="this base class have attribute location coordination mX,mY,mZ and Rotation degree" alt="" coords="301,5,461,317"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_air_conditioner.html" title="control air conditioner level and on off" alt="" coords="138,365,278,663"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_seat.html" title="provide interfaces; move forward/backward/right/left/Rotation for Seat move forward/backward for seat..." alt="" coords="302,387,461,641"/>
+<area shape="rect" id="node6" href="$classcom_1_1example_1_1hvacapplication_1_1_wheel.html" title="can move Wheel location up or down center 0, down &#45;1, &#45;2, &#45;3 up 1, 2, 3" alt="" coords="519,446,679,582"/>
+<area shape="rect" id="node4" href="$classcom_1_1example_1_1hvacapplication_1_1_driver_seat.html" title="handle Driver seat&#39;s Heat/Cool/Lifting/backLocation" alt="" coords="5,740,240,1037"/>
+<area shape="rect" id="node5" href="$classcom_1_1example_1_1hvacapplication_1_1_passenger_seat.html" title="handle Passenger seat&#39;s Heat/Cool/Lifting/backLocation" alt="" coords="264,777,499,1001"/>
+<area shape="rect" id="node7" href="$classcom_1_1example_1_1hvacapplication_1_1_steer_wheel.html" title="control steer Wheel location and warm, and volume level" alt="" coords="523,711,741,1067"/>
+</map>

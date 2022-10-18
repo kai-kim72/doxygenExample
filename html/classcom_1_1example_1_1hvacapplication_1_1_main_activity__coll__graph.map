@@ -1,0 +1,22 @@
+<map id="MainActivity" name="MainActivity">
+<area shape="rect" id="node1" title="HVAC Application main thread." alt="" coords="891,1365,1081,1619"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,851,137,929"/>
+<area shape="rect" id="node3" title=" " alt="" coords="162,851,237,929"/>
+<area shape="rect" id="node4" title=" " alt="" coords="296,851,391,929"/>
+<area shape="rect" id="node5" title=" " alt="" coords="485,851,570,929"/>
+<area shape="rect" id="node6" href="$classcom_1_1example_1_1hvacapplication_1_1_passenger_seat.html" title="handle Passenger seat&#39;s Heat/Cool/Lifting/backLocation" alt="" coords="853,778,1087,1002"/>
+<area shape="rect" id="node7" href="$classcom_1_1example_1_1hvacapplication_1_1_seat.html" title="provide interfaces; move forward/backward/right/left/Rotation for Seat move forward/backward for seat..." alt="" coords="891,367,1049,620"/>
+<area shape="rect" id="node10" href="$classcom_1_1example_1_1hvacapplication_1_1_driver_seat.html" title="handle Driver seat&#39;s Heat/Cool/Lifting/backLocation" alt="" coords="594,741,829,1039"/>
+<area shape="rect" id="node8" href="$classcom_1_1example_1_1hvacapplication_1_1_unit.html" title="this base class have attribute location coordination mX,mY,mZ and Rotation degree" alt="" coords="1102,5,1262,317"/>
+<area shape="rect" id="node15" href="$classcom_1_1example_1_1hvacapplication_1_1_air_conditioner.html" title="control air conditioner level and on off" alt="" coords="1112,741,1252,1039"/>
+<area shape="rect" id="node17" href="$classcom_1_1example_1_1hvacapplication_1_1_wheel.html" title="can move Wheel location up or down center 0, down &#45;1, &#45;2, &#45;3 up 1, 2, 3" alt="" coords="1991,425,2151,561"/>
+<area shape="rect" id="node9" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_seat_back_movable.html" title="Adjusting Seat Back location by using this abstract interface&#39;s implementation." alt="" coords="877,115,1063,207"/>
+<area shape="rect" id="node11" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_liftable.html" title="Adjusting seat lifting level by using this abstract interface&#39;s implementation." alt="" coords="674,447,749,539"/>
+<area shape="rect" id="node12" href="$classcom_1_1example_1_1hvacapplication_1_1_heatable.html" title="Adjusting Heat level by using this interface instance." alt="" coords="1277,771,1429,1009"/>
+<area shape="rect" id="node13" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_level_adjustable.html" title="Adjusting a destination level as like heat, cool, temperature, etc... , by using this abstract interf..." alt="" coords="1483,440,1598,547"/>
+<area shape="rect" id="node14" href="$classcom_1_1example_1_1hvacapplication_1_1_coolable.html" title="Adjusting Cool level by using this interface instance." alt="" coords="1453,763,1629,1017"/>
+<area shape="rect" id="node16" href="$classcom_1_1example_1_1hvacapplication_1_1_steer_wheel.html" title="control steer Wheel location and warm, and volume level" alt="" coords="1890,712,2109,1068"/>
+<area shape="rect" id="node19" href="$classcom_1_1example_1_1hvacapplication_1_1_temperaturable.html" title="temperature level setting" alt="" coords="1653,683,1865,1097"/>
+<area shape="rect" id="node18" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_volumeable.html" title="control audio volume level and mute" alt="" coords="1848,440,1967,547"/>
+<area shape="rect" id="node20" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_g_u_i_update_event_listener.html" title="GUI Display Update callback and event listener interface." alt="" coords="1649,447,1816,539"/>
+</map>

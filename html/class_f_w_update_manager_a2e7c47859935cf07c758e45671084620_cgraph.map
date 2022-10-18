@@ -1,0 +1,9 @@
+<map id="InitializeSignalSlots" name="InitializeSignalSlots">
+<area shape="rect" id="node1" title="use to initialize signal for FWUpdateThread slot status" alt="" coords="5,66,140,93"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#a10ee4d32814bba5e7480b2e5ac420273" title="This function is called when firmware updating is complete in Mian &amp; SNOR." alt="" coords="192,41,323,67"/>
+<area shape="rect" id="node7" href="$class_f_w_update_manager.html#a6d5ff474437995c7af39e82f5eb20fc8" title="callback function to get the result for firmware updating is complete in Mian &amp; SNOR" alt="" coords="188,91,327,118"/>
+<area shape="rect" id="node3" href="$class_f_w_update_thread.html#a17a237457e57625296e6b24feb19c60a" title=" " alt="" coords="375,15,533,42"/>
+<area shape="rect" id="node5" href="$class_f_w_update_manager.html#a8a44927532310e43b5b2725cc963e11b" title="use to sync MISC" alt="" coords="415,67,493,94"/>
+<area shape="rect" id="node4" href="$class_f_w_update_thread.html#abd39714ea56d3d65063f15aea457d329" title=" " alt="" coords="581,5,797,47"/>
+<area shape="rect" id="node6" href="$class_f_w_update_manager.html#aa259202f10d1e62df990659c6736669c" title="use to notify Updating is complete" alt="" coords="612,71,767,98"/>
+</map>

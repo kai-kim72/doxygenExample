@@ -1,0 +1,8 @@
+<map id="LevelUp" name="LevelUp">
+<area shape="rect" id="node1" title="increase temperature level" alt="" coords="5,107,72,133"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_temperaturable.html#ac70c2700c8787fcdaf686bca5d1d3bee" title=" " alt="" coords="147,5,339,32"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_temperaturable.html#a207acfffeaaac7a63d58bcdffad1a389" title=" " alt="" coords="202,56,285,83"/>
+<area shape="rect" id="node4" href="$classcom_1_1example_1_1hvacapplication_1_1_temperaturable.html#a85330758456761a247c99261876ae60e" title=" " alt="" coords="164,107,323,133"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_g_u_i_update_event_listener.html#a52177dea3cd5cbf5d722b3a4deb384d9" title="implement this callback handle the result of adjusting temperature" alt="" coords="120,158,367,199"/>
+<area shape="rect" id="node6" href="$classcom_1_1example_1_1hvacapplication_1_1_temperaturable.html#ae5496a5dce4fa58b362ea8b7c9ba1b96" title=" " alt="" coords="202,224,285,251"/>
+</map>

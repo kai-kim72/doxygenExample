@@ -1,0 +1,5 @@
+<map id="VehicleIf::AppMsg" name="VehicleIf::AppMsg">
+<area shape="rect" id="node1" title=" " alt="" coords="56,233,183,340"/>
+<area shape="rect" id="node2" href="$struct_micom_if_1_1_ipc_data.html" title=" " alt="" coords="5,5,116,171"/>
+<area shape="rect" id="node3" href="$struct_micom_if_1_1_can_data.html" title="can data attribute" alt="" coords="140,27,219,149"/>
+</map>

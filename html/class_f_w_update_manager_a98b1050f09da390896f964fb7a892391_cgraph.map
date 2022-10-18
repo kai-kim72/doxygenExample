@@ -1,0 +1,14 @@
+<map id="Initialize" name="Initialize">
+<area shape="rect" id="node1" title="use to initialize FWUpdate engine" alt="" coords="5,81,75,108"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#ae8f82605aa11f1862ba88ead2b93bce6" title="use to check FWUpdating is ready or not" alt="" coords="141,56,239,83"/>
+<area shape="rect" id="node6" href="$class_f_w_update_manager.html#a2e7c47859935cf07c758e45671084620" title="use to initialize signal for FWUpdateThread slot status" alt="" coords="123,107,257,133"/>
+<area shape="rect" id="node3" href="$class_f_w_update_manager.html#a7a043e3991398e63f32dc1708cea3a03" title="use to find the new update firmware image file in the predefined directory" alt="" coords="320,5,429,32"/>
+<area shape="rect" id="node4" href="$class_f_w_update_manager.html#a47c14c1dedad72ce9e7b5674072a4b7c" title="use to update All firmware" alt="" coords="326,56,423,83"/>
+<area shape="rect" id="node5" href="$class_f_w_update_thread.html#a1da06f228605b7f25034170ca4696ca3" title=" " alt="" coords="494,56,649,83"/>
+<area shape="rect" id="node7" href="$class_f_w_update_manager.html#a10ee4d32814bba5e7480b2e5ac420273" title="This function is called when firmware updating is complete in Mian &amp; SNOR." alt="" coords="309,107,440,133"/>
+<area shape="rect" id="node12" href="$class_f_w_update_manager.html#a6d5ff474437995c7af39e82f5eb20fc8" title="callback function to get the result for firmware updating is complete in Mian &amp; SNOR" alt="" coords="305,157,444,184"/>
+<area shape="rect" id="node8" href="$class_f_w_update_thread.html#a17a237457e57625296e6b24feb19c60a" title=" " alt="" coords="492,107,651,133"/>
+<area shape="rect" id="node10" href="$class_f_w_update_manager.html#a8a44927532310e43b5b2725cc963e11b" title="use to sync MISC" alt="" coords="532,159,611,185"/>
+<area shape="rect" id="node9" href="$class_f_w_update_thread.html#abd39714ea56d3d65063f15aea457d329" title=" " alt="" coords="699,97,915,138"/>
+<area shape="rect" id="node11" href="$class_f_w_update_manager.html#aa259202f10d1e62df990659c6736669c" title="use to notify Updating is complete" alt="" coords="729,163,884,189"/>
+</map>

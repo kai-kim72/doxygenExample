@@ -1,0 +1,7 @@
+<map id="SteerWheel" name="SteerWheel">
+<area shape="rect" id="node1" title="control steer Wheel location and warm, and volume level" alt="" coords="140,549,359,905"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_wheel.html" title="can move Wheel location up or down center 0, down &#45;1, &#45;2, &#45;3 up 1, 2, 3" alt="" coords="5,365,165,501"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_unit.html" title="this base class have attribute location coordination mX,mY,mZ and Rotation degree" alt="" coords="5,5,165,317"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_volumeable.html" title="control audio volume level and mute" alt="" coords="190,380,309,487"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_level_adjustable.html" title="Adjusting a destination level as like heat, cool, temperature, etc... , by using this abstract interf..." alt="" coords="333,380,448,487"/>
+</map>

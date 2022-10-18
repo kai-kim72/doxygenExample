@@ -1,0 +1,6 @@
+<map id="ISeatBackMovable" name="ISeatBackMovable">
+<area shape="rect" id="node1" title="Adjusting Seat Back location by using this abstract interface&#39;s implementation." alt="" coords="159,5,345,97"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_seat.html" title="provide interfaces; move forward/backward/right/left/Rotation for Seat move forward/backward for seat..." alt="" coords="173,145,331,399"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_driver_seat.html" title="handle Driver seat&#39;s Heat/Cool/Lifting/backLocation" alt="" coords="5,447,240,744"/>
+<area shape="rect" id="node4" href="$classcom_1_1example_1_1hvacapplication_1_1_passenger_seat.html" title="handle Passenger seat&#39;s Heat/Cool/Lifting/backLocation" alt="" coords="264,483,499,707"/>
+</map>

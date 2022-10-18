@@ -1,0 +1,5 @@
+<map id="InitializeSignalSlots" name="InitializeSignalSlots">
+<area shape="rect" id="node1" title="use to initialize signal for FWUpdateThread slot status" alt="" coords="221,5,356,32"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#a98b1050f09da390896f964fb7a892391" title="use to initialize FWUpdate engine" alt="" coords="104,5,173,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="This is main function for hvac pannel." alt="" coords="5,5,56,32"/>
+</map>

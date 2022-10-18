@@ -1,0 +1,7 @@
+<map id="getSeatBackDegree" name="getSeatBackDegree">
+<area shape="rect" id="node1" title=" " alt="" coords="312,111,451,138"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_driver_seat.html#a2926a64d74a47ca14b5082e99d885fe8" title="seat back moving backward _leveldegree 0, &#45;(10, 20 ,30,40,50,60,70,80, 90)" alt="" coords="20,5,249,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_passenger_seat.html#a2926a64d74a47ca14b5082e99d885fe8" title="seat back moving backward _leveldegree 0, &#45;(10, 20 ,30,40,50,60,70,80, 90)" alt="" coords="5,71,264,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1example_1_1hvacapplication_1_1_driver_seat.html#af88bbbaadc2351d5a094aba41fe89091" title="seat back moving forward _leveldegree 0, +(10, 20 ,30,40,50,60,70,80, 90)" alt="" coords="25,136,244,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1example_1_1hvacapplication_1_1_passenger_seat.html#af88bbbaadc2351d5a094aba41fe89091" title="seat back moving forward _leveldegree 0, +(10, 20 ,30,40,50,60,70,80, 90)" alt="" coords="11,201,259,243"/>
+</map>

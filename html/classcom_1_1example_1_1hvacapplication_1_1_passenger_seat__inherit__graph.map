@@ -1,0 +1,6 @@
+<map id="PassengerSeat" name="PassengerSeat">
+<area shape="rect" id="node1" title="handle Passenger seat&#39;s Heat/Cool/Lifting/backLocation" alt="" coords="67,667,301,891"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_seat.html" title="provide interfaces; move forward/backward/right/left/Rotation for Seat move forward/backward for seat..." alt="" coords="105,365,263,619"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_unit.html" title="this base class have attribute location coordination mX,mY,mZ and Rotation degree" alt="" coords="5,5,165,317"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_seat_back_movable.html" title="Adjusting Seat Back location by using this abstract interface&#39;s implementation." alt="" coords="189,115,376,207"/>
+</map>

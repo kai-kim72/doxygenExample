@@ -1,0 +1,5 @@
+<map id="Property" name="Property">
+<area shape="rect" id="node1" title="Construct a new Property:: Property object." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node2" href="$class_device.html#a3d0a09067ca1503b582905f60c1254be" title="use to get instance of created Device class" alt="" coords="124,5,259,32"/>
+<area shape="rect" id="node3" href="$class_device.html#abb5349bdf5f41f34848742319838968c" title="Construct a new Device:: Device object." alt="" coords="307,5,413,32"/>
+</map>

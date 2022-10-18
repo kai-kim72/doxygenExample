@@ -1,0 +1,5 @@
+<map id="moveRotation" name="moveRotation">
+<area shape="rect" id="node1" title="rotate seat Direction Right : +90 / + 180 Direction Left : &#45;90 / &#45; 180" alt="" coords="5,46,105,73"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_unit.html#a0005f911d8dbd0ac9b755fd64087771c" title=" " alt="" coords="153,5,349,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_unit.html#ab1b817c8283e6a1bd140f8a5cdddfae7" title=" " alt="" coords="153,71,349,112"/>
+</map>

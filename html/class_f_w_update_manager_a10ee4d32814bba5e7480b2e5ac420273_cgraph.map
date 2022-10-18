@@ -1,0 +1,7 @@
+<map id="OnFWUpdateDone" name="OnFWUpdateDone">
+<area shape="rect" id="node1" title="This function is called when firmware updating is complete in Mian &amp; SNOR." alt="" coords="5,42,136,69"/>
+<area shape="rect" id="node2" href="$class_f_w_update_thread.html#a17a237457e57625296e6b24feb19c60a" title=" " alt="" coords="184,15,343,42"/>
+<area shape="rect" id="node4" href="$class_f_w_update_manager.html#a8a44927532310e43b5b2725cc963e11b" title="use to sync MISC" alt="" coords="224,67,303,94"/>
+<area shape="rect" id="node3" href="$class_f_w_update_thread.html#abd39714ea56d3d65063f15aea457d329" title=" " alt="" coords="391,5,607,47"/>
+<area shape="rect" id="node5" href="$class_f_w_update_manager.html#aa259202f10d1e62df990659c6736669c" title="use to notify Updating is complete" alt="" coords="421,71,576,98"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="ILevelAdjustable" name="ILevelAdjustable">
+<area shape="rect" id="node1" title="Adjusting a destination level as like heat, cool, temperature, etc... , by using this abstract interf..." alt="" coords="389,5,503,112"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_air_conditioner.html" title="control air conditioner level and on off" alt="" coords="5,226,145,523"/>
+<area shape="rect" id="node3" href="$classcom_1_1example_1_1hvacapplication_1_1_coolable.html" title="Adjusting Cool level by using this interface instance." alt="" coords="170,248,346,501"/>
+<area shape="rect" id="node4" href="$classcom_1_1example_1_1hvacapplication_1_1_heatable.html" title="Adjusting Heat level by using this interface instance." alt="" coords="370,255,522,494"/>
+<area shape="rect" id="node5" href="$classcom_1_1example_1_1hvacapplication_1_1_steer_wheel.html" title="control steer Wheel location and warm, and volume level" alt="" coords="546,197,765,553"/>
+<area shape="rect" id="node6" href="$classcom_1_1example_1_1hvacapplication_1_1_temperaturable.html" title="temperature level setting" alt="" coords="789,160,1001,589"/>
+</map>

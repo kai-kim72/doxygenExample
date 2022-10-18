@@ -1,0 +1,4 @@
+<map id="setUsbVbusOn" name="setUsbVbusOn">
+<area shape="rect" id="node1" title="use to enable USB VBus as on" alt="" coords="149,5,260,32"/>
+<area shape="rect" id="node2" href="$class_property.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,5,101,32"/>
+</map>

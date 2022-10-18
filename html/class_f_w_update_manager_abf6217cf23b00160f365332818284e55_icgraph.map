@@ -1,0 +1,8 @@
+<map id="snorUpdateChanged" name="snorUpdateChanged">
+<area shape="rect" id="node1" title=" " alt="" coords="541,22,680,49"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#ae8f82605aa11f1862ba88ead2b93bce6" title="use to check FWUpdating is ready or not" alt="" coords="221,22,320,49"/>
+<area shape="rect" id="node5" href="$class_f_w_update_manager.html#a55caf3984201bcf5258faf2baee41ee3" title="use to show FWUpdate Menu" alt="" coords="368,22,493,49"/>
+<area shape="rect" id="node6" href="$class_f_w_update_manager.html#a47c14c1dedad72ce9e7b5674072a4b7c" title="use to update All firmware" alt="" coords="382,73,479,100"/>
+<area shape="rect" id="node3" href="$class_f_w_update_manager.html#a98b1050f09da390896f964fb7a892391" title="use to initialize FWUpdate engine" alt="" coords="104,22,173,49"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="This is main function for hvac pannel." alt="" coords="5,22,56,49"/>
+</map>

@@ -1,0 +1,60 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="This is main function for hvac pannel." alt="" coords="5,363,56,389"/>
+<area shape="rect" id="node2" href="$class_vehicle_if.html#a05848de25ac2dbec233935058a1d24b4" title=" " alt="" coords="151,276,247,303"/>
+<area shape="rect" id="node39" href="$class_f_w_update_manager.html#a98b1050f09da390896f964fb7a892391" title="use to initialize FWUpdate engine" alt="" coords="105,461,294,488"/>
+<area shape="rect" id="node51" href="$class_vehicle_if.html#ac96f7559c58c908bdd1264bec377fd42" title=" " alt="" coords="104,124,295,151"/>
+<area shape="rect" id="node52" href="$class_property.html#a4227da8785aa5fc03a23645321bbfe74" title=" " alt="" coords="114,698,285,739"/>
+<area shape="rect" id="node3" href="$class_micom_if.html#a669f2008c447306fce463acf6cd34b12" title=" " alt="" coords="352,225,552,252"/>
+<area shape="rect" id="node4" href="$class_micom_if.html#a142e1b2780ee8a8ffb90161b9c7fdcdf" title=" " alt="" coords="349,276,555,303"/>
+<area shape="rect" id="node5" href="$class_vehicle_if.html#adf72cf10b94d31f1dddc382bae70179f" title=" " alt="" coords="381,175,523,201"/>
+<area shape="rect" id="node7" href="$class_vehicle_if.html#a0ac3eb815584fea121cad48217e4cbf0" title=" " alt="" coords="383,327,521,353"/>
+<area shape="rect" id="node8" href="$class_vehicle_if.html#a13a43e6d814de94978c515cb084873b1" title=" " alt="" coords="403,124,501,151"/>
+<area shape="rect" id="node34" href="$class_vehicle_if.html#ac5c54df7ed3b930268c8d7752c101725" title=" " alt="" coords="393,377,511,404"/>
+<area shape="rect" id="node6" href="$class_vehicle_if.html#a17d4b89869aa709b3d95f7005cd0bc5c" title=" " alt="" coords="669,244,801,271"/>
+<area shape="rect" id="node9" href="$class_micom_if.html#a807ae45e9a43b1557502353424804fc5" title=" " alt="" coords="1214,181,1317,208"/>
+<area shape="rect" id="node30" href="$class_vehicle_if.html#acd62f0493b392e0e7c659986bccac1b9" title="process Can Data" alt="" coords="647,80,822,107"/>
+<area shape="rect" id="node31" href="$class_vehicle_if.html#a15f64537d523e8d8a482aa8f35ce0348" title="process Ipc data of predefined command and &#160;&#160;update Ign2 status/Mcu version" alt="" coords="650,131,819,157"/>
+<area shape="rect" id="node10" href="$class_micom_if.html#a938cfec3a80d7c6caf752bd33400c336" title=" " alt="" coords="1421,193,1552,220"/>
+<area shape="rect" id="node20" href="$class_micom_if.html#aa1c1ea2324d054a1f39beda0ceb1bd5f" title=" " alt="" coords="1423,41,1551,68"/>
+<area shape="rect" id="node21" href="$tc-ipc-ctrl-cpp_8h.html#a357ddca7a875ecdde7b032259623de23" title=" " alt="" coords="1427,143,1547,169"/>
+<area shape="rect" id="node22" href="$tc-ipc-ctrl-cpp_8h.html#af066f1f908c45474b649fbbd3c94f592" title=" " alt="" coords="1425,92,1549,119"/>
+<area shape="rect" id="node23" href="$tc-ipc-ctrl-cpp_8h.html#adfe05b4e4964c5ee23c98dce8e50f1cb" title=" " alt="" coords="1428,295,1545,321"/>
+<area shape="rect" id="node24" href="$class_micom_if.html#af4e6a2f961726a84e8b4293b158aa39c" title=" " alt="" coords="1424,244,1549,271"/>
+<area shape="rect" id="node11" href="$class_micom_if.html#a8a16a2f7213004b2eacfa62c7914dcef" title=" " alt="" coords="2355,117,2488,144"/>
+<area shape="rect" id="node13" href="$class_micom_if.html#a61e5c473093fb71bcf8dd6205f76a0dd" title=" " alt="" coords="1600,117,1797,144"/>
+<area shape="rect" id="node19" href="$class_micom_if.html#a45f7aac2231a853ada5e30c112795cc8" title=" " alt="" coords="2096,168,2299,195"/>
+<area shape="rect" id="node12" href="$class_util.html#a8167e64101304e76ee990cda3ae87d33" title=" " alt="" coords="2544,117,2651,144"/>
+<area shape="rect" id="node14" href="$class_micom_if.html#a628fc04ebb2ab0a3f3faee2913d43474" title=" " alt="" coords="1853,143,2041,169"/>
+<area shape="rect" id="node15" href="$class_micom_if.html#a388ddcfed5a582f8be4b7074f3375f21" title=" " alt="" coords="1845,92,2048,119"/>
+<area shape="rect" id="node16" href="$class_micom_if.html#a639823fdb0ce2f5135b52f62a4d8d29f" title=" " alt="" coords="1882,41,2011,68"/>
+<area shape="rect" id="node17" href="$class_micom_if.html#a9e8d2a28395ee1014f27d95470f67a0f" title=" " alt="" coords="2111,67,2283,93"/>
+<area shape="rect" id="node18" href="$tc-ipc-ctrl-cpp_8h.html#a7830ffe0313e7ae0107eb9b46c438716" title=" " alt="" coords="2347,193,2496,220"/>
+<area shape="rect" id="node25" href="$class_micom_if.html#a13aae0253f04e61f1f216bb8a7b71c20" title=" " alt="" coords="1606,244,1791,271"/>
+<area shape="rect" id="node28" href="$class_micom_if.html#ad00224b1eae131f4473f89294296ed09" title=" " alt="" coords="1605,295,1793,321"/>
+<area shape="rect" id="node29" href="$class_micom_if.html#a049acd0a2819de198886f1d207edaec9" title=" " alt="" coords="1606,345,1791,372"/>
+<area shape="rect" id="node26" href="$class_micom_if.html#a257fa0db27f6c83e17fc23c4a2d75d20" title=" " alt="" coords="1880,256,2013,283"/>
+<area shape="rect" id="node27" href="$class_micom_if.html#a66408e8f0d08c74a8876ccd99af694ca" title=" " alt="" coords="2115,219,2279,245"/>
+<area shape="rect" id="node32" href="$class_vehicle_if.html#a54b6dfb854053f3ee82b8995a0e8a306" title=" " alt="" coords="922,105,1095,132"/>
+<area shape="rect" id="node33" href="$class_micom_if.html#a95cc77b0b1ee63e86b9bc8e68a20108a" title=" " alt="" coords="1212,99,1319,125"/>
+<area shape="rect" id="node35" href="$class_device.html#a732f6455795967b28a4dd242834760c1" title="use to get TouchIC Status" alt="" coords="653,371,816,397"/>
+<area shape="rect" id="node36" href="$class_device.html#a6aa1dfe9780c134956ba0345478bfba9" title="use to reset TouchIC" alt="" coords="663,320,807,347"/>
+<area shape="rect" id="node37" href="$class_device.html#a687466de443bb20982823869d598d81e" title="use to reset TouchIC HW" alt="" coords="929,345,1089,372"/>
+<area shape="rect" id="node38" href="$class_device.html#a63dfbc0a22698d4c75f617fd8302831e" title="use to reset TouchIC LDO" alt="" coords="927,295,1090,321"/>
+<area shape="rect" id="node40" href="$class_f_w_update_manager.html#ae8f82605aa11f1862ba88ead2b93bce6" title="use to check FWUpdating is ready or not" alt="" coords="343,545,561,572"/>
+<area shape="rect" id="node44" href="$class_f_w_update_manager.html#a2e7c47859935cf07c758e45671084620" title="use to initialize signal for FWUpdateThread slot status" alt="" coords="357,454,547,495"/>
+<area shape="rect" id="node41" href="$class_f_w_update_manager.html#a7a043e3991398e63f32dc1708cea3a03" title="use to find the new update firmware image file in the predefined directory" alt="" coords="653,538,816,579"/>
+<area shape="rect" id="node42" href="$class_f_w_update_manager.html#a47c14c1dedad72ce9e7b5674072a4b7c" title="use to update All firmware" alt="" coords="626,604,843,631"/>
+<area shape="rect" id="node43" href="$class_f_w_update_thread.html#a1da06f228605b7f25034170ca4696ca3" title=" " alt="" coords="931,604,1086,631"/>
+<area shape="rect" id="node45" href="$class_f_w_update_manager.html#a10ee4d32814bba5e7480b2e5ac420273" title="This function is called when firmware updating is complete in Mian &amp; SNOR." alt="" coords="609,421,860,448"/>
+<area shape="rect" id="node50" href="$class_f_w_update_manager.html#a6d5ff474437995c7af39e82f5eb20fc8" title="callback function to get the result for firmware updating is complete in Mian &amp; SNOR" alt="" coords="624,473,845,514"/>
+<area shape="rect" id="node46" href="$class_f_w_update_thread.html#a17a237457e57625296e6b24feb19c60a" title=" " alt="" coords="929,467,1088,493"/>
+<area shape="rect" id="node48" href="$class_f_w_update_manager.html#a8a44927532310e43b5b2725cc963e11b" title="use to sync MISC" alt="" coords="909,409,1108,436"/>
+<area shape="rect" id="node47" href="$class_f_w_update_thread.html#abd39714ea56d3d65063f15aea457d329" title=" " alt="" coords="1157,463,1373,505"/>
+<area shape="rect" id="node49" href="$class_f_w_update_manager.html#aa259202f10d1e62df990659c6736669c" title="use to notify Updating is complete" alt="" coords="1160,398,1371,439"/>
+<area shape="rect" id="node53" href="$class_device.html#a6b2000d11d33b640a32b8c2690edb2f9" title="use to set Haptic strength" alt="" coords="366,823,538,849"/>
+<area shape="rect" id="node54" href="$class_property.html#a304b961db20fc78f850ebc920606b1b8" title=" " alt="" coords="362,757,542,798"/>
+<area shape="rect" id="node56" href="$class_property.html#a3f21b8378bc05e437a2e7f13f4479e50" title=" " alt="" coords="908,705,1109,732"/>
+<area shape="rect" id="node58" href="$class_property.html#a20b1c61b11e4958034432a25c57465ab" title=" " alt="" coords="931,655,1086,681"/>
+<area shape="rect" id="node55" href="$class_property.html#ac108e63f995b842eff411e5397cfc98d" title=" " alt="" coords="645,760,825,787"/>
+<area shape="rect" id="node57" href="$class_device.html#ae3e78e2f252cf9f2ffc206eabbb257d1" title="use to set LCD Brigthness level" alt="" coords="1181,680,1350,707"/>
+</map>

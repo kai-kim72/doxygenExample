@@ -1,0 +1,8 @@
+<map id="Stop" name="Stop">
+<area shape="rect" id="node1" title=" " alt="" coords="877,38,927,65"/>
+<area shape="rect" id="node2" href="$class_f_w_update_manager.html#a10ee4d32814bba5e7480b2e5ac420273" title="This function is called when firmware updating is complete in Mian &amp; SNOR." alt="" coords="579,13,829,39"/>
+<area shape="rect" id="node6" href="$class_f_w_update_thread.html#ac0435a45bad4eb91d6e5707de9f89c6a" title="Destroy the FWUpdateThread::FWUpdateThread object." alt="" coords="639,63,769,90"/>
+<area shape="rect" id="node3" href="$class_f_w_update_manager.html#a2e7c47859935cf07c758e45671084620" title="use to initialize signal for FWUpdateThread slot status" alt="" coords="341,5,531,47"/>
+<area shape="rect" id="node4" href="$class_f_w_update_manager.html#a98b1050f09da390896f964fb7a892391" title="use to initialize FWUpdate engine" alt="" coords="104,13,293,39"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="This is main function for hvac pannel." alt="" coords="5,13,56,39"/>
+</map>

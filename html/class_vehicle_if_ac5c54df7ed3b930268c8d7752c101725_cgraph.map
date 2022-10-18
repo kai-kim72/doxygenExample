@@ -1,0 +1,7 @@
+<map id="update" name="update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,67,57"/>
+<area shape="rect" id="node2" href="$class_device.html#a732f6455795967b28a4dd242834760c1" title="use to get TouchIC Status" alt="" coords="115,5,277,32"/>
+<area shape="rect" id="node3" href="$class_device.html#a6aa1dfe9780c134956ba0345478bfba9" title="use to reset TouchIC" alt="" coords="124,56,268,83"/>
+<area shape="rect" id="node4" href="$class_device.html#a687466de443bb20982823869d598d81e" title="use to reset TouchIC HW" alt="" coords="327,31,487,57"/>
+<area shape="rect" id="node5" href="$class_device.html#a63dfbc0a22698d4c75f617fd8302831e" title="use to reset TouchIC LDO" alt="" coords="325,81,488,108"/>
+</map>

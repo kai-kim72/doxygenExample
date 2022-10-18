@@ -1,0 +1,6 @@
+<map id="init" name="init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,44,83"/>
+<area shape="rect" id="node2" href="$class_device.html#ac96e8f0df12e61d9a2034933e00987a3" title="use to enable VBus Control" alt="" coords="92,5,269,32"/>
+<area shape="rect" id="node3" href="$class_device.html#a6b2000d11d33b640a32b8c2690edb2f9" title="use to set Haptic strength" alt="" coords="95,56,267,83"/>
+<area shape="rect" id="node4" href="$class_device.html#a49231b384df763f6d3e73d63f642f636" title="use to enable USB VBus as on" alt="" coords="103,107,259,133"/>
+</map>

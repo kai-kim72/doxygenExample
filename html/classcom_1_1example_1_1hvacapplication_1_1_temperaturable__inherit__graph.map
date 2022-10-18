@@ -1,0 +1,4 @@
+<map id="Temperaturable" name="Temperaturable">
+<area shape="rect" id="node1" title="temperature level setting" alt="" coords="5,160,217,589"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1example_1_1hvacapplication_1_1_i_level_adjustable.html" title="Adjusting a destination level as like heat, cool, temperature, etc... , by using this abstract interf..." alt="" coords="54,5,169,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="setLcdBrightness" name="setLcdBrightness">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node2" href="$class_property.html#a3f21b8378bc05e437a2e7f13f4479e50" title=" " alt="" coords="176,5,320,32"/>
+<area shape="rect" id="node3" href="$class_device.html#ae3e78e2f252cf9f2ffc206eabbb257d1" title="use to set LCD Brigthness level" alt="" coords="368,5,537,32"/>
+</map>

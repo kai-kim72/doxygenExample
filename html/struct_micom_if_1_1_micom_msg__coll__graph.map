@@ -1,0 +1,6 @@
+<map id="MicomIf::MicomMsg" name="MicomIf::MicomMsg">
+<area shape="rect" id="node1" title=" " alt="" coords="34,373,173,451"/>
+<area shape="rect" id="node2" href="$union_micom_if_1_1_micom_data.html" title=" " alt="" coords="59,233,147,311"/>
+<area shape="rect" id="node3" href="$struct_micom_if_1_1_can_data.html" title="can data attribute" alt="" coords="5,27,84,149"/>
+<area shape="rect" id="node4" href="$struct_micom_if_1_1_ipc_data.html" title=" " alt="" coords="108,5,219,171"/>
+</map>

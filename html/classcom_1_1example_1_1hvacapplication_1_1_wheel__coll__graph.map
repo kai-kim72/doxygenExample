@@ -1,0 +1,4 @@
+<map id="Wheel" name="Wheel">
+<area shape="rect" id="node1" title="can move Wheel location up or down center 0, down &#45;1, &#45;2, &#45;3 up 1, 2, 3" alt="" coords="5,365,165,501"/>
+<area shape="rect" id="node2" href="$classcom_1_1example_1_1hvacapplication_1_1_unit.html" title="this base class have attribute location coordination mX,mY,mZ and Rotation degree" alt="" coords="5,5,165,317"/>
+</map>
