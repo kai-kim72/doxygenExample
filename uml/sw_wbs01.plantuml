@@ -1,0 +1,94 @@
+@startwbs
+title 
+<size:12>Abbreviation Table</size>
+|= <size:11>SDP | <size:11>SW 개발계획서 |
+| <size:11>IDD | <size:11>SW 인터페이스 명세서 |
+| <size:11>STD | <size:11>SW 시험명세서 |
+| <size:11>SPS | <size:11>SW 산출물사양서 |
+| <size:11>SRS | <size:11>SW 요구사항정의서 |
+| <size:11>SITP | <size:11>통합시험계획서 |
+| <size:11>SDD | <size:11>SW 설계명세서 |
+| <size:11>CSR |  <size:11>CodeScroll Static Report |
+| <size:11>CRSD | <size:11>SW 개발완료보고서 |
+
+[ software development process ]
+end title
+
++ Software Development WBS
+++ 개발 발의
++++ 사양서 입수및 분석
+++++ SRS
+++++ SDP
+++++ Inspection
++++++_ peer review
+++ ES
+++- 개발
+++++ SDD
+++++ STD
+++++ SITP
+++++ IDD
+++++ Inspection
++++++_ peer review
++++ 검증
+++++ STR
+++++ CSR
+++ DV
+++- 개발
+++++ SDD
+++++ STD
+++++ CSR
+++++ Inspection
++++++_ peer review
++++++_ updated
++++ 검증
+++++ STR
+++++ CSR
+++ PV
+++- 개발
+++++ SPS
+++++ STR
++++ 검증
+++++ Final STR
+++ MP
++++ 검증
+++++ CRSD
+
+@endwbs
+
+
+
+
+@startsalt
+{#
+| 항목 | 이름 
+ SDP | SW 개발계획서 
+ IDD | SW 인터페이스 명세서 
+ STD | SW 시험명세서 
+ STR | SW 시험결과서 
+ SPS | SW 산출물사양서 
+ SRS | SW 요구사항정의서 
+ SITP | 통합시험계획서 
+ SDD | SW 설계명세서 
+ CSR | CodeScroll Static Report 
+ CRSD | SW 개발완료보고서 
+
+}
+@endsalt
+
+@startuml
+allowmixing
+
+json abbreviation_table {
+ "SDP":"SW 개발계획서",
+ "IDD":"SW 인터페이스 명세서", 
+ "STD":"SW 시험명세서", 
+ "STR":"SW 시험결과서", 
+ "SPS":"SW 산출물사양서", 
+ "SRS":"SW 요구사항정의서", 
+ "SITP":"통합시험계획서", 
+ "SDD":"SW 설계명세서", 
+ "CSR":"CodeScroll Static Report", 
+ "CRSD":"SW 개발완료보고서" 
+}
+
+@enduml

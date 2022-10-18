@@ -1,0 +1,277 @@
+@startuml
+
+title <타이틀 영역> Class Diagram Sample (plantuml)
+
+abstract class QObject
+abstract class QThread
+
+QObject <|-- Device
+QObject <|-- FWUpdateManager
+QThread <|-- FWUpdateThread
+FWUpdateManager o-- FWUpdateThread : m_FWUpdateThread
+
+class MicomIf::IpcTxStatus {
++ f
++ txLock
++ dataLock
++ ackCv
++ waitAck
++ data
++ dataSize   
+}
+
+class MicomIf {
+- ipchandle
+- mTxLock
+- mTxThread
+- mTxQueue
+- mTxCv
+- ipcDataCallbacks
+- ipcVehicleCanHandler
+- ipcTestCmdCallback
+- ipcIpcRxDataCallback
++ MicomIf()
++ open()
++ close()
++ addHandler()
++ addvehicleCanHandler()
++ addTestCmdHandler()
++ addIpcRxDataHandler()
++ logPrint()
++ sendMsg()
+}
+
+MicomIf o-- MicomIf::IpcTxStatus 
+
+
+class Property {
++ init()
++ systemPropertyChanged()
+-- more ... --
+}
+
+QObject <|-- Property
+Property o-- Device : mDevice
+
+class Device {
++ playHaptic()
++ setHapticStrength()
++ setLcdBrightness()
++ getTouchIcStatus()
++ resetTouchIC()
++ resetTouchIcLdo()
++ enableVbusControl()
++ setUsbVbusOn()
++ getInstance()
++ resetTouchIcHw()    
+}
+
+Device --o Device : instance
+
+class VehicleIf {
++ init()
++ deinit()
++ sendMsg()
++ setSystemProperty()
++ update()
+- ipcDataRx()
+- canDataRx()
+- processIpcData()
+- processCanData()
+- getSignalValue()
+- updateIgn2State()
+- run()
+}
+
+QObject <|-- VehicleIf
+VehicleIf o-- Device : mDevice
+
+
+class FWUpdateThread {
+ + update_main_dir_path
+ + update_sub_dir_path
+ - m_update_cmd
+ + Run()   
+ + Stop()
+ - run()
+ - ExitFWUpdateThread()
+}
+
+class FWUpdateManager {
++ allUpdate
++ mainUpdate
++ snorUpdating
++ nowUpdating
++ updateReady
++ mainState
++ snorState
++ initialize()
++ showUpdateMenu()
++ allUpdate()
++ mainUpdate()
++ snorUpdate()
++ nowUpdating()
++ updateReady()
++ mainState()
++ snorState()
+- initializeSignalSlots()
+- find_update_dir()
+- OnFWUpdateResult()
+- OnFWUpdateDone()
+- checkUpdate()
+- syncMisc()
+- updateAllFW()
+- updateDoneNotification()
+}
+
+newpage  
+
+class qt_meta_stringdata_Device {
++ data
++ stringdata()
+}
+
+class qt_meta_stringdata_FWUpdateManager_t {
++ data
++ stringdata()
+}
+
+class qt_meta_stringdata_FWUpdateThread_t {
++ data
++ stringdata()
+}
+
+class qt_meta_stringdata_Property_t {
++ data
++ stringdata()
+}
+
+class qt_meta_stringdata_VehicleIf_t {
++ data
++ stringdata
+}
+
+class stIPC_msg {
+    + cmd1
+    + cmd2
+    + length
+    + data
+}
+
+class TestCmd {
+    + id
+    + param
+}
+
+class Util {
+    + Util()
+    + printBuffer()
+}
+
+class Micomif::MicomData {
+
+}
+
+class Micomif::IpcData {
+
+}
+
+class MicomIf::CanData {
++ netId
++ canId
++ length
++ payload    
+}
+
+class MicomIf::IpcData {
+    + cmdId
+    + ipcReady
+    + aliveEn
+    + ign2State
+    + ignOffAction
+    + mcuVersion
+    + value
+}
+
+MicomIf::MicomData o-- Micomif::IpcData : +ipcData
+MicomIf::MicomData o-- MicomIf::CanData : +can
+
+
+class MicomIf::MicomMsg {
+    + type
+}
+
+MicomIf::MicomMsg o-- MicomIf::MicomData : +data
+
+class Property::__attribute__ {
+    + frontIncarRaw
+    + reserved1
+    + frontStrWhIHeatSw
+    + frontDrSeatHeatSW
+    + frontDrSeatCoolSW
+    + reserved2
+    + frontPsSeatHeatSW
+    + frontPsSeatCoolSW
+    + frontMultiAutoHighSw
+    + frontMultiAutoMidSw
+    -- more --
+}
+
+
+class Property::Prodata {
+    + processIpcData
+    + ign2State
+    + canPayload
+    + value
+}
+
+
+newpage  
+
+Property --> Device : getInstance
+
+note bottom
+Property/VehicleIf member functions and relationship with Device
+
+Set Haptic Strength
+main -> Property::systemPropertyChanged -> Device::setHapticStrength
+Property::init -> Device::setHapticStrength
+
+Haptic play
+Property::playHaptic -> Device::platHaptic
+
+Set Lcd brigthness
+main -> Property::systemPropertyChanged -> Property::setLcdPower -> Device::setLcdBrightness
+main -> Property::systemPropertyChanged -> Property::updateLcdBrightness -> Device::setLcdBrightness
+main -> Property::systemPropertyChanged -> Property::setLcdBrightnessByAutoBright -> Property::setLcdBrightness 
+     -> Device::setLcdBrightness - Property::updateLcdBrightness -> Device::setLcdBrightness
+Property::lcdPowerOnByAfterBlower -> Device::setLcdBrightness    
+
+Set USB Vbus On
+Property::init -> Device::setUsbVbusOn
+
+Enable Vbus Control
+Property::init -> Device::enableVbusControl
+
+end note 
+
+VehicleIf --> Device : getInstance
+note bottom
+Get Touch IC Status
+main -> VehicleIf::init -> VehicleIf::update -> Device::getTouchIcState
+
+Reset Touch IC
+main -> VehicleIf::init -> VehicleIf::update -> Device::resetTouchIC
+
+Reset Touch IC HW
+main -> VehicleIf::init -> VehicleIf::update -> Device::resetTouchIC -> Device::resetTouchIcHw
+
+Reset TouchIc Ldo
+main -> VehicleIf::init -> VehicleIf::update -> Device::resetTouchIC -> Device::resetTouchIcLdo
+
+end note
+
+
+
+
+@enduml

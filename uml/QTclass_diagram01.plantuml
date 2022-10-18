@@ -1,0 +1,65 @@
+@startuml
+
+title  
+QT class Diagram Sample (plantuml)
+|=<#F9FFFF>  <back:#3DFF92> QtTest</back> <back:#1E90FF> QtSql</back> <back:#28E7FF>            QtWebkit  |
+|<#F9FFFF>  <back:#3DFF92> QtTest</back> <back:#1E90FF> QtSql</back> <back:#FF69B4> QtMultimedia</back> <back:#28E7FF> QtWebkit</back> |
+|<#F9FFFF>  <back:#3DFF92> QtTest</back> <back:#1E90FF> QtSql</back> <back:#FF7F50> QtQMl</back>  <back:#54BD54>QtQuick</back> |
+|<#F9FFFF>  <back:#3DFF92> QtTest</back> <back:#1E90FF> QtSql <back:#6E6EFF> QtNetwork</back> <back:#FFD732> QtGui</back> |
+|<#bebebe>                             QtCore |
+end title
+
+class QtQuickControls2 as "Qt Quick Controls2"
+class QtQuickDialogs as "Qt Quick Dialogs"
+class QtQuickLayout as "Qt Quick Layout"
+class QtQuickTest as "Qt Quick Test"
+class QtMultimediaWidgets as "Qt Multimedia Widgets"
+class QtQuick as "Qt Quick"
+class QtMultimedia as "Qt Multimedia"
+class QtNetwork as "Qt Network"
+class QtWidgets as "Qt Widgets"
+class QtQml as "Qt Qml"
+class QtSql as "Qt Sql"
+class QtTest as "Qt Test"
+class QtGui as "Qt Gui"
+class QtCore as "Qt Core"
+note top
+Qt uses these enablers to provide higher-level UI and
+ application development components.
+    Object Model
+    The Meta-Object System
+    The Property System
+    The Event System
+    Signals & Slots
+    Differences between String-Based and Functor-Based Connections
+    The State Machine Framework
+    Timers
+end note 
+
+QtQuickControls2 --|> QtQuick
+QtQuick --|> QtQml
+QtQml --|> QtCore
+QtNetwork --|> QtCore
+QtWidgets --|> QtCore
+QtSql --|> QtCore
+QtTest --|> QtCore
+QtGui --|> QtCore
+QtMultimedia --|> QtGui
+QtMultimediaWidgets --|> QtWidgets
+QtQuickDialogs --|> QtQuick
+QtQuickLayout --|> QtQuick
+QtQuickTest --|> QtQuick
+
+node layer [
+QtWebkit
+----
+QtMultimedia  |                QtTest | QtSql 
+----
+QtQml | QtQuick |      QtTest | QtSql 
+----
+QtNetwork | QtGui | QtTest | QtSql 
+----
+QtCore
+]
+
+@enduml

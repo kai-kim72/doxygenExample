@@ -1,0 +1,71 @@
+@startuml
+
+title <타이틀 영역> Component Diagram Sample (plantuml)
+
+package "QML Group" { 
+     
+  frame "main" { 
+    [main.qml] 
+  }
+
+  frame "FrontMain"{
+    [FrontMain.qml]
+   }
+
+  frame "AfterBlower"{
+    [AfterBlower.qml]
+ 
+  }
+  frame "SchdVentilation.qml" {
+ 
+  }
+  frame "EngineeringMode.qml" {
+   
+  }
+  
+  event --> [QGuiApplication] 
+}
+
+node "Panel Groups" {
+ 
+  [VehicleIf] --> [Device]
+  [VehicleIf] --> [MicomIf]
+  [MicomIf] -- open  
+  [MicomIf] -- sendMsg
+  [Property] --> [Device]
+ 
+}
+
+node "Update Group" {
+   [FWUpdateManager] -- checkUpdate
+   checkUpdate -- find_update_dir
+   checkUpdate -- updateAllFW
+   updateAllFW --> [FWUpdateThread]
+   [FWUpdateManager] -- initializeSignalSlots
+   [FWUpdateManager] -- updateDoneNotification
+   initializeSignalSlots -- OnFWUpdateDone
+   initializeSignalSlots -- OnFWUpdateResult
+   OnFWUpdateDone --> [FWUpdateThread]
+   [FWUpdateThread] -- Run
+   [FWUpdateThread] -- Stop
+   [FWUpdateThread] -- ExitFWUpdateThread
+}
+
+node "Micom Group" {
+  
+  [MicomIf::rxHandler] -- processPe2Message
+  [MicomIf::rxHandler] -- processTccMonitoring
+  [MicomIf::rxHandler] -- printBuffer
+  [MicomIf::txThread] -- ipctxMshCanWrite
+  [MicomIf::txThread] -- ipcTxMsgIgn2OffOk
+  [MicomIf::txThread] -- ipcTxMsgIpcReady
+}
+
+[QGuiApplication] ---> [VehicleIf]
+[QGuiApplication] ---> [Property] 
+[QGuiApplication] ---> [FWUpdateManager]
+
+open --> [MicomIf::rxHandler]
+open --> [MicomIf::txThread]
+
+@enduml

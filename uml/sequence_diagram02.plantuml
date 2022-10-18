@@ -1,0 +1,253 @@
+@startuml
+
+
+title <타이틀 영역> Sequence Diagram Sample (plantuml)
+
+Main -> QGuiApplication : app(argc, argv)
+note right 
+create QGuiApplication instance 
+end note
+Main -> Property : property(&QQmlApplicationEngine)
+note right 
+ get Property instance and 
+ save them to QQmlApplicationEngine engine
+end note
+Main -> VehicleIf : vehicle(&engine)
+note right
+get VehicleIf instance 
+and save it to QQmlApplicationEngine
+end note
+Main -> FWUpdateManager : fwupdate(&engine)
+note right
+get FWUpdateManager instance
+and save the instance to QQmlApplicationEngine
+end note
+Main -> QObject : connect(&vehicle,&VehicleIf::systemPropertyChanged, &property, &Property::systemPropertyChanged)
+note right
+    In Qt, we have an alternative to the callback technique: 
+    We use signals and slots. A signal is emitted when a particular event occurs.
+    Qt's widgets have many predefined signals, 
+    but we can always subclass widgets to add our own signals to them. 
+    A slot is a function that is called in response to a particular signal. 
+    Qt's widgets have many pre-defined slots, 
+    but it is common practice to subclass widgets and 
+    add your own slots so that you can handle the signals that you are interested in.
+    example: QObject:connect(&obj, Signal, &obj2, Slot)
+
+    A class which emits a signal neither knows nor cares which slots receive the signal. 
+    Qt's signals and slots mechanism ensures that if you connect a signal to a slot, 
+    the slot will be called with the signal's parameters at the right time. 
+    Signals and slots can take any number of arguments of any type. 
+    They are completely type safe.
+    All classes that inherit from QObject or one of its subclasses 
+    (e.g., QWidget) can contain signals and slots. 
+    Signals are emitted by objects when they change their state in a way
+    that may be interesting to other objects. This is all the object does to communicate.
+    It does not know or care whether anything is receiving the signals it emits.
+    This is true information encapsulation, 
+    and ensures that the object can be used as a software component.
+    Slots can be used for receiving signals, but they are also normal member functions.
+    Just as an object does not know if anything receives its signals, 
+    a slot does not know if it has any signals connected to it. 
+    This ensures that truly independent components can be created with Qt.
+    You can connect as many signals as you want to a single slot, 
+    and a signal can be connected to as many slots as you need. 
+    It is even possible to connect a signal directly to another signal. 
+    (This will emit the second signal immediately whenever the first is emitted.)
+    Together, signals and slots make up a powerful component programming mechanism.
+end note
+Main -> QObject : connect(&property,&Property::systemProperty, &vehicle, &VehicleIf::systemProperty)
+Main -> VehicleIf : vehicle.init()
+note right
+register callback to MicomIf for ipcData and canData
+end note 
+VehicleIf -> MicomIf : addIpcRxDataHandler(bind(&VehicleIf::ipcDataRx, this, std:placeholders::_1))
+VehicleIf -> MicomIf : addVehicleCanHandler(bind(&VehicleIf::canDataRx, this, std:placeholders::_1))
+    alt "mMsgThread == null"
+        VehicleIf -> VehicleIf : mMsgThread = new std::thread(&VehicleIf::run, this)
+        note left
+        Create  thread :  VechicleIf::run  
+        call result = MicomIf::open()
+        end note
+        VechicleIf -> MicomIf : result = MicomIf::open()
+
+        alt "result == 0"
+            loop true
+                loop (mMsgQueue.size > 0 & run)
+                    VechicleIf -> VechicleIf : AppMsg msg = mMsgQueue.front()
+                    VechicleIf -> VechicleIf : mMsgQueue.pop()
+                    VechicleIf -> VechicleIf :  lck.unlock()
+                    
+                    note left                   
+                    switch(msg.id)
+                    {
+                        case APP_MSG_ID_STOP:
+                        run = false
+                        APP_STOP_ACTION stopAction = msg.value.stopAction
+                        break;
+                        case APP_MSG_ID_IPC_DATA:
+                        processIpcData(msg.value.ipcData)
+                        break;
+                        case APP_MSG_ID_CAN_DATA:
+                        processCanData(msg.value.canData)
+                        break;
+                        default:
+                        break;
+                    }
+                    end note
+                end
+
+                alt "run == true"
+                     VechicleIf -> VechicleIf : mMsgCv.wait(lck)
+                else
+                     VechicleIf -> VechicleIf : break;
+                end
+
+            end
+
+        alt mMsgThread != null
+            VehicleIf -> MicomIf : open()
+            alt "ipcHandle == null"
+                MicomIf -> MicomIf : ipchandle = tc_ipc_ctrl_open("/dev/tcc_ipc_micom", rxHandler)
+                note left
+                  if(ipcHandle != null)
+                    for(i =0; i < cmdMax; i++)
+                    {
+                        ipcTxStatus[i].data = null
+                        ipcTxStatus[i].dataSize = 0
+                        ipcTxStatus[i].waitAck = false
+                    }                     
+                end note
+                alt "mTxThread == null"
+                    MicomIf -> MicomIf : mTxThread = new std::thread(&MicomIf::txThread)
+                    note left
+                        create Micom txThread() & start polling mTxQueue.size() > 0
+                        while(run)
+                        {
+                            while(mTxQueue.size() > 0)
+                            {
+                                //get pushed Micom TxMsg and check ipcTxStaus
+                                //handle msg type CAN0, VEHICLE, IPC_DATA
+                                // call std::async(std::launch::async, &MicomIf::ipcTxDataRetry, &status)
+                                // -> tc_ipc_ctrl_msg_send()
+                                // -> MicomIf::rxHandler -> processTccMonitoring() or  processPe2Message()
+                                MicomMsg msg = mTxQueue.front()
+                                mTxQueue.pop()
+                                lck.unlock()
+                                switch(msg.type)
+                                {
+                                    case CAN0:
+                                        ipcTxMsgCanWrite(IPC_CAN_NETWORK_ID_0, msg.data.can);
+                                        break;
+                                    case VEHICLE:
+                                        break;
+                                    case IPC_DATA:
+                                        switch(msg.data.ipcData.cmdId) {
+                                        case VEHICLE_PROTOCOL_CMD_ID_IPC_OK:
+                                            ipcTxMsgIpcReady(msg.data.ipcData.value.ipcReady);
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_IGN2_OFF_OK:
+                                            ipcTxMsgIgn2OffOk(msg.data.ipcData.value.ign2OffAction);
+                                            run = false;
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_CPU_ALIVE_EN:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_CPU_ALIVE:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_REQ_MCU_VER:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_CAN_WRITE:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_REQ_CALIBRATION_DATA:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_SET_CALIBRATION_DATA:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_SLEEP_TIMER_RESET:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_REQ_DTC_STATUS:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_DTC_EVENT:
+                                            break;
+                                        case VEHICLE_PROTOCOL_CMD_ID_MCU_LOG_PRINT:
+                                        break;
+                                        default:
+                                            qDebug("[%s:%d] get unknown message...", __PRETTY_FUNCTION__, __LINE__);
+                                            break;
+                                        }
+                                        break;
+                                    default:
+                                        break;
+                                }
+                                    lck.lock();
+                            }
+
+                            if(run)
+                            {
+                                mTxCv.wait(lck)
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
+                    end note
+                    alt "mTxThread != null"
+                        MicomIf -> MicomIf : sendMsg(msg)
+                        note left
+                             push micomMsg to mTxQueue and notify it
+                             MicomMsg msg = {IPC_DATA, .data={.ipcData={.cmdId=VEHICLE_PROTOCOL_CMD_ID_IPC_OK, .value={.ipcReady=IPC_STATE_READY}}}};
+                             mTxQueue.push(msh)
+                             mTxCv.notify_one()
+                        end note
+                    else
+                        MicomIf -> MicomIf :  tc_ipc_ctrl_close(ipcHandle), ipchandle = null
+                    end
+                end            
+            end   
+            VehicleIf -> VehicleIf : result = 0            
+        else
+            VehicleIf -> VehicleIf : Creating Message handle thread failed !!
+        end
+
+    else
+        VehicleIf -> VehicleIf : message hanle thread already running
+    end
+
+VehicleIf -> QObject : connect(&mPollingTimer, SIGNAL(timeout()), this, SLOT(update()))
+VehicleIf -> VehicleIf : mPollingTimer.start(1000)
+note right
+start vehicleIf mMsgThread for polling ipc RxData and Can Rxdata
+end note
+Main -> QQmlApplicationEngine : rootContext()->setContextProperty("Property",&property)
+Main -> QQmlApplicationEngine : rootContext()->setContextProperty("FWUpdateManager",&fwupdate)
+Main -> QQmlApplicationEngine : load(QUrl(QStringLiteral("qrc:/qml/main.qml")))
+Main -> Main
+note right
+Set property/FWUpdateManager Instance to Qt QML Application Engine context
+load main.qml to show the screen in QGuiApplication
+end note
+Main -> Property : property.init()
+Property -> Device : setHapticStrength(m_hapticStrength)
+Property -> Device : enableVbusControl()
+Property -> Device : setUsbVbusOn()
+Main -> FWUpdateManager : fwupdate.Initialize()
+FWUpdateManager -> FWUpdateManager : InitializeSignalSlots()
+FWUpdateManager -> QObject : connect(m_FWUpdateThread, SIGNAL(updateResult(int,int), this SLOT(OnFWUpdateResult(int,int)))
+FWUpdateManager -> QObject : connect(m_FWUpdateThread, SIGNAL(updateDone(int,int), this SLOT(OnFWUpdateDone()))
+note left
+register callback FWUpdate result and Done in FWUpdateThread
+end note
+FWUpdateManager -> FWUpdateManager : initUpdateEngine(MAIN_CORE)
+FWUpdateManager -> QObject : connect(&m_updateTimer, SIGNAL(timeout()), this, SLOT(checkUpdate()))
+FWUpdateManager -> FWUpdateManager :  m_updateTimer.start(1000)
+note right
+start created FWUpdate Timer for checking updating
+end note 
+Main -> QGuiApplication : app.exec()
+note right
+execute created QGuiApplication
+end note
+Main -> Main : return
+
+
+@enduml

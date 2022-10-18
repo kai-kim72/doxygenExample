@@ -1,0 +1,46 @@
+@startwbs
+title
+[HVAC Panel Package Components]
+
+end title
+
++ HVAC Panel Application
+++ QML group
+++-_ qml screen view
+++-_ <0> user actions\nseatheatCool\nsteerwheelHeat
+++-_ tempDispLevel\nblowerLevel\n(Drv/Psgr)
+++-_ Ventilation\n(Drv/Psgr)
+++-_ air Condition
+++-_ Floor(Drv/Psgr)
+++-_ haptic level
+++-_ Lcd brightness
+++-_ language
+++-_ Theme
+++-_ Key Activate\ndeactivate
+++-_ Sync
++++ EngineeringMode
++++ SchdVentilation
++++ FrontMain
++++ AfterBlower
+++ Update group
+++-_ Sync Option
++++ FWUpdateManager
++++ FWUpdateThread
+++ Panel group
+++-_ User actions\n signal
++++ VehicleIf
++++-_ <2> setSystemProperty()\nslots\npush MicomMsg mTxQueue\nmTxcv.Notify
+++++_ <1-1> systemPropertyChanged()\nsignal
+++++ <>--> Device
+++++ <>--> MicomIf
++++ Property
++++-_ <1> setSystemProperty()\n Qobject::active()\nsignal
+++++_ <2-1> systemPropertyChanged()\nslots
+++++ <>--> Device
+++ Micom group
++++ MicomIf
+++++ txThread
++++++_ <3> pop txQueue.front\nsend can0 vehicle\n ipcdata to CPU
+++++ rxThread
+
+@endwbs

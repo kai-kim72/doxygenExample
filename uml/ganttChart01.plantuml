@@ -1,0 +1,106 @@
+@startgantt
+title
+[Software Development Process Plan]
+end title
+projectscale weekly
+
+[요구사항서입수]  lasts 1 weeks 
+[요구사항분석] lasts 1 weeks
+[SRS작성] lasts 1 weeks
+[동료검토] lasts 1 day
+[SRS작성완료] lasts 5 days
+[요구사항서입수] -> [요구사항분석] 
+[요구사항분석] -> [SRS작성]
+[SRS작성] -> [동료검토]
+[동료검토] -> [SRS작성완료]
+note bottom
+SW요구사항정의서(SRS)
+SW개발계획서(SDP)
+end note
+-- 개발발의 4Ws --
+
+[유즈케이스도출] lasts 1 weeks
+[아키텍쳐/컴포넌트] lasts 1 weeks
+[클래스/인터페이스] lasts 1 weeks
+[시퀀스/상태도] lasts 1 weeks
+[SDD작성] lasts 1 weeks
+[동료검토ES] lasts 1 days
+[SDD작성완료] lasts 5 days
+[ProtoTyping] lasts 1 weeks
+[SRS작성완료] -> [유즈케이스도출] 
+[유즈케이스도출] -> [아키텍쳐/컴포넌트]
+[아키텍쳐/컴포넌트] -> [클래스/인터페이스]
+[클래스/인터페이스] -> [시퀀스/상태도]
+[시퀀스/상태도] -> [SDD작성]
+[SDD작성] -> [동료검토ES]
+[동료검토ES] -> [SDD작성완료]
+[SDD작성완료] -> [ProtoTyping]
+note bottom
+설계내용 1차구현
+SW통합시험계획서(SITP)
+SW설계명세서(SDD)
+SW기능시험명세서(STD)
+end note
+-- ES개발 7Ws --
+
+[ES기능검증및STR] lasts 2 weeks
+[ES품평회] lasts 2 days
+[ProtoTyping] -> [ES기능검증및STR]
+[ES기능검증및STR] -> [ES품평회]
+note bottom
+SW기능시험명세서/결과서(STD/STR)
+CodeScroller Report 포함(CSR)
+검증 차수별 목표치 수립 
+end note
+-- ES검증 2Ws + 2Ds --
+
+[SDD보완] lasts 1 weeks
+[동료검토DV] lasts 1 days
+[설계내용2차구현] lasts 2 weeks
+[SW시험명세서체크보완] lasts 1 weeks
+[ES품평회] -> [SDD보완]
+[SDD보완] -> [동료검토DV] 
+[동료검토DV] -> [설계내용2차구현] 
+[설계내용2차구현] -> [SW시험명세서체크보완]
+-- DV개발 4Ws --
+
+[DV기능검증및STR] lasts 2 weeks
+[DV품평회] lasts 2 days
+[SW시험명세서체크보완] -> [DV기능검증및STR]
+[DV기능검증및STR] -> [DV품평회]
+note bottom
+SW기능시험명세서 검증및 결과 (STD/STR)
+CodeScroll Report(CSR) 수정목표치 달성결과
+및 waiver 항목 포함
+신뢰성 평가 입고 가능여부 판단 및
+평가 차수 정의
+end note
+-- DV검증 2Ws + 2Ds --
+
+[DV문제점SDD/STD보완] lasts 1 weeks
+[설계내용3차보완] lasts 1 weeks
+[DV품평회] -> [DV문제점SDD/STD보완] 
+[DV문제점SDD/STD보완] -> [설계내용3차보완] 
+note bottom
+SW산출물사양서작성(SPS)
+SW기능시험명세서 검증결과(STR)
+end note
+-- PV개발 2 Ws --
+
+[신뢰성차수대응] lasts 2 weeks
+[설계내용3차보완] -> [신뢰성차수대응]
+note bottom
+신뢰성 차수별 문제점 수정및
+평가 결과서(final STR)
+end note
+-- PV검증 2Ws --
+
+[양산대응] lasts 1 weeks
+[신뢰성차수대응] -> [양산대응]
+note bottom
+신뢰성 양산 대응 
+SW개발완료보고서(CRSD) 
+end note
+-- MP검증  1W --
+
+@endgantt

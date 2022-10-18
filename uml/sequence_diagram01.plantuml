@@ -1,0 +1,70 @@
+@startuml
+/'
+* Last Modified Date : 2021.09.12
+* blog url : jinane.tistory.com
+'/
+
+title <타이틀 영역> Sequence Diagram Sample (plantuml)
+
+Actor User #WhiteSmoke
+box "Component#1" #Lavender
+participant ListenThread #APPLICATION
+participant ResponseThread #APPLICATION
+participant Validator #APPLICATION
+database DB
+collections "Received\nFolder" AS ReceivedPath
+collections "Completed\nFolder" AS CompletedPath
+participant "FileBackupThread" #APPLICATION
+end box
+participant "Component#2\nBackup Storage Server " AS Comp2 #IMPLEMENTATION
+
+User->ListenThread: Request Call (파일 등록 요청)
+ListenThread->ReceivedPath : 파일 저장
+
+create Validator
+ListenThread->Validator: Validator Call
+activate Validator
+Validator->ReceivedPath: 파일을 읽어서 정상적인 파일인지 확인
+
+    alt "파일이 정상적이라면"
+    Validator->DB: DB에 파일 path와 정보 저장
+    else "파일이 정상적이 아니라면"
+    Validator->ReceivedPath: 파일 삭제
+
+    create ResponseThread
+    "Validator"->ResponseThread: 파일 등록 실패 응답 요청
+
+deactivate Validator
+
+    activate ResponseThread
+    ResponseThread->User: 파일 등록 실패 응답
+    deactivate ResponseThread
+
+end
+
+group FileBackupThread loop
+    note over FileBackupThread : 파일 보관 기간이 지난 파일은 삭제하기 위해\n1시간마다 파일 삭제 기능이 활성화 됨
+    group IF "파일 마지막 삭제시간이 1시간이 초과되었다면"
+        "FileBackupThread"->"CompletedPath": 시간 만료된 파일 삭제
+        "FileBackupThread"->"FileBackupThread" : 파일 마지막 삭제시간 업데이트
+    end
+
+    "FileBackupThread"->"DB": 신규 등록된 파일이 있는지 DB에서 정보 조회
+    "FileBackupThread"->ReceivedPath : 백업 서버에 전송할 파일 읽어오기 
+    "FileBackupThread"->"FileBackupThread": 파일을 전송하기 위해 Request Message 생성
+    "FileBackupThread"->"Comp2": 파일 백업 요청
+    "Comp2"->"FileBackupThread": <font color=blue><b>Response 200</b> <font color=black> 파일 백업 완료
+
+    "FileBackupThread"->ReceivedPath : 파일을 Completed Folder로 Move 명령
+    ReceivedPath->CompletedPath : 파일 이동
+
+
+    create ResponseThread
+    "FileBackupThread"->ResponseThread: 파일 등록 성공 응답 요청
+    activate ResponseThread
+end
+    ResponseThread->User: 파일 등록 성공 응답
+    deactivate ResponseThread
+
+
+@enduml

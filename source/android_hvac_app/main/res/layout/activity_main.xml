@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutpaneltxttitle"
+        android:layout_width="497dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="93dp">
+
+        <LinearLayout
+            android:id="@+id/layoutpanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButtonLeftUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/upbtn_effect" />
+
+                <ImageView
+                    android:id="@+id/imageViewLeftSeatOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/seat_status_driver_off" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonLeftDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/downbtn_effect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewLeftSeatCoolBlower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/wind_driver_low_on_normal" />
+
+                <ImageView
+                    android:id="@+id/imageViewLeftSeatCool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/seat_status_driver_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewLeftBlower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/background_dark"
+                        app:srcCompat="@drawable/blow_downbtn_effect" />
+
+                    <TextView
+                        android:id="@+id/textViewBlower"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/background_dark"
+                        android:text="OFF"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewRightBlower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/background_dark"
+                        app:srcCompat="@drawable/blow_upbtn_effect" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/buttonAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/black"
+                        app:srcCompat="@drawable/btn_ac_off_normal" />
+
+                    <ImageButton
+                        android:id="@+id/buttonSync"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/black"
+                        app:srcCompat="@drawable/btn_sync_off_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewRightSeatCoolBlower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/wind_passenger_low_on_normal" />
+                <ImageView
+                    android:id="@+id/imageViewRightSeatCool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/seat_status_passenger_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButtonRightUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/upbtn_effect" />
+
+                <ImageView
+                    android:id="@+id/imageViewRightSeatOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/seat_status_passenger_off" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonRightDOwn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/downbtn_effect" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFF0000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageViewDrvTempUp"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/upbtn_effect" />
+
+                <ImageView
+                    android:id="@+id/imageViewDrvTempDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/temp_17_0" />
+
+                <ImageButton
+                    android:id="@+id/imageViewDrvTempDown"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/downbtn_effect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageViewPassengerTempUp"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/upbtn_effect" />
+
+                <ImageView
+                    android:id="@+id/imageViewPassengerTempDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/temp_17_0" />
+
+                <ImageButton
+                    android:id="@+id/imageViewPassengerTempDown"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/downbtn_effect" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:gravity="center_horizontal"
+            android:text="HVAC Panel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+             />
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

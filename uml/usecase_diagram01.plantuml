@@ -1,0 +1,40 @@
+@startuml
+
+title 
+HVAC Panel Use Case example
+
+end title
+
+left to right direction
+actor "User" as usr
+rectangle HVAC_Panel {
+    usecase "EngineeringMode" as UC1
+    usecase "AfterBlower" as UC2
+    usecase "SchdVentilation" as UC3    
+    usecase "FWUpdating" as UC4
+    usecase "FrontMain" as UC5   
+}
+
+usr --> UC5 : Key activate
+usr --> UC5 : Key deactivate
+usr --> UC5 : haptic strength
+usr --> UC5 : LCD Brightness
+usr --> UC5 : Air clean
+usr --> UC5 : passenger seat cool
+usr --> UC5 : driver seat cool
+usr --> UC5 : air conditioner
+usr --> UC5 : SteeringWheelHeat
+usr --> UC5 : PassengerTempLevel
+usr --> UC5 : DriverTempLevel
+usr --> UC5 : BlowerUp/Down/level
+usr --> UC5 : PassengerVent
+usr --> UC5 : DriverVent
+usr --> UC5 : PassengerFloor
+usr --> UC5 : DriverFloor
+UC5 <--> UC1
+UC5 <--> UC2
+UC5 <--> UC3
+UC5 <--> UC4
+
+
+@enduml

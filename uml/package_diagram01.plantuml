@@ -1,0 +1,37 @@
+@startuml
+title <타이틀 영역> Package Diagram Sample (plantuml)
+
+package "Hvac Panel" {
+
+    [QML Group]
+    note right 
+     QGuiApplication : main/Frontmain/EngineeringMode
+     SchdVentilation/AfterBlower.qml 
+     including basic event loop, application setting
+     , execution routine informs etc..
+     receiving events from window system event & input devices 
+     and forwarding them to Pandel/Update Group
+    end note
+    [Panel Group]
+    note bottom
+     Set systemProperty by using VehicleIf for TouchIC and 
+     Sending/receiving a data thru communicating vehicleIf and MicomIf
+     Adjusing Lcd power/brightness and HapticStrength thru Property class
+    end note
+    [Update Group]
+    note top
+    Checking Fwupdating is ready and proceeding FW updating 
+    thru FWUpdatingManager and FWUpdateThread
+    end note
+    [Micom Group]
+    note bottom
+    Sending/Receiving a data and predefined command between MCU & CPU
+    end note
+    [QML Group] --> [Panel Group]
+    [QML Group] --> [Update Group]
+    [Panel Group] --> [Micom Group]
+    event --> [QML Group]
+    signal -> [QML Group]
+
+}
+@enduml
