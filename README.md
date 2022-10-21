@@ -1,7 +1,7 @@
 # doxygenExample
 
 ## Description
-- Repository Main Brench Tree 구조
+- Repository Main Branch Tree 구조
 <img src="uml/description/description.png" alt="description" />
 
 -------------------------------------------------------
