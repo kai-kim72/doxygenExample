@@ -1,0 +1,27 @@
+@startwbs
+title 
+[ Repository Directory Tree ]
+end title
++ Repository
+++ Main
++++ config_file
+++++_ DoxygenWizard 설정파일 Doxyfile_cfg2_srs_sdd_example
+++++_ 독시젠위저드로 생성시 외부 라이브러리 기능 지원시 new_header.html 파일에 링크 추가해 주고 생성하면됨
++++ logoimg
+++++_ 리트빅 회사 로고 이미지 파일: litbig-logo-50.png
++++ main_page
+++++_ 마크다운페이지 파일 저장 \n main_page.md
+++++_ SDD.md
+++++_ SRS.md
+++++_ tips.md
++++ mermaid_uml
+++++_ mermaid UML 툴로 생성한 파일들 저장
++++ output/html
+++++_ 독시젠위저드를 통하여 생성한 문서들이 있는 html 디렉토리
++++ source/android_hvac/main
+++++_ 구현 소스 파일 저장 디렉토리
++++ uml
+++++_ Plant UML 툴을 사용하여 생성한 파일들 저장
++++_ Readme.md
+
+@endwbs
