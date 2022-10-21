@@ -15,11 +15,6 @@
 - main_page 폴더에 신규 기능들에 대한 SRS/SDD markdown 페이지 파일을 추가해 주고<br> visual studio code 편집기를 사용하여 작성 하도록 하고<br> Notion에 공유된 Doxygen_setting 가이드를 참고하여<br> doxygenwizard -> Export -> Input 항목에 추가한 파일 위치를 추가해 준다
 
 -------------------------------------------------------
-### <a href="main_page/main_page.md">Main Page</a>
-### <a href="main_page/SDD.md">SDD Page</a>
-### <a href="main_page/SRS.md">SRS Page</a>
-
--------------------------------------------------------
 
 ## 업데이트 이력
 
